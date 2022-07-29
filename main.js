@@ -22,7 +22,7 @@ function populateBoard (size)
                 table.insertAdjacentElement("beforeend",square);
         }
 }
-//populateBoard(48);
+populateBoard(48);
 
 function changeSize (input)
 {

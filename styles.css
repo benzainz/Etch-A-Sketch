@@ -56,8 +56,42 @@ button:hover {
         cursor: pointer;
 }
 .blackButton {
-
+        background-color: black;
+        color: white;
+}
+.blackButton:hover{
+        background-color: white;
+        color: black;
 }
 .grayButton {
-        
+        background-color: rgba(128, 128, 128, 0.411);
+        color: black;
+}
+.grayButton:hover {
+        background-color: rgb(95,95,95);
+        color: white;
+}
+.randomButton {
+        background: linear-gradient(0.25turn, #f65cfc, #ebf8e1, #583cf6);
+
+}
+.randomButton:hover {
+        background: linear-gradient(0.25turn, #20ff02, #ebf8e1, #aecc03);
+}
+.erasorButton {
+        background-color: white;
+        color: rgba(0, 0, 0);
+}
+.erasorButton:hover {
+        background-color: white;
+        color: rgb(255, 255, 255);
+}
+input {
+        width: 80px;
+}
+.mode {
+        margin-bottom: 5px;
+}
+.error {
+        display: none;
 }
