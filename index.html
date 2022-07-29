@@ -12,6 +12,7 @@
 <body>
         <div class="flex-container">
                 <div class="title"><h1>SketchPad</h1></div>
+                <div class="mode">Mode: Coloring</div>
                 <div class="content">
                         <div class="table"></div>
                         <div class="buttons">
@@ -24,11 +25,12 @@
                         <div>
                                 <input type="text"
                                  placeholder="Size of Board" 
-                                 value="48" 
+                                 value="" 
                                  onchange="changeSize(this.value)"
                                  />
                                 <button>Set size</button>
                         </div>
+                        <div class="error">Input must be between 2-100</div>
                 </div>
         </div>
         <script src="main.js" ></script>    

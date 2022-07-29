@@ -22,15 +22,17 @@ function populateBoard (size)
                 table.insertAdjacentElement("beforeend",square);
         }
 }
-populateBoard(48);
+//populateBoard(48);
 
 function changeSize (input)
 {
         if (input >=2 && input <=100)
         {
+                document.querySelector('.error').style.display = 'none';
                 populateBoard(input);
         }
-        else {console.log("too many squares")}
+        else {document.querySelector('.error').style.display = 'flex';
+}
 }
 
 function colorSquare()
@@ -63,8 +65,12 @@ function resetBoard()
         let squares = table.querySelectorAll("div");
         squares.forEach((div) => div.style.backgroundColor="white");
         
-        
 }
-document.querySelector("body").addEventListener("click", () => {
-        click = !click;
+//anonymous function to stop color divs on click 
+document.querySelector("body").addEventListener("click", (e) => {
+        if(e.target.tagName != "BUTTON"){
+                click = !click;
+        if (click){document.querySelector(".mode").textContent = "Mode: Coloring";}
+        else { document.querySelector(".mode").textContent = "Mode: No Coloring";}
+        }
 });
