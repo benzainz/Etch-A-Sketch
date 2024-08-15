@@ -21,11 +21,8 @@ SketchPad is a simple, interactive web application that allows users to create d
 - `reset.css`: A CSS reset file to ensure consistent styling across different browsers.
 - `main.js`: The JavaScript file that contains the logic for coloring, erasing, and interacting with the grid.
 
-## How to Run
-1. **Local Environment:**
-   - Download all the project files (`index.html`, `styles.css`, `reset.css`, and `main.js`).
-   - Open the `index.html` file in your web browser to start using SketchPad.
+## How to Open:
 
-2. **Deployed on render.com:**
+1. **Deployed on render.com:**
     - URL: https://etch-a-sketch-x8dk.onrender.com
 
